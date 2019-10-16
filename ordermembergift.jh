@@ -1,0 +1,44 @@
+entity OrderMemberGift {
+   id Long,
+   /** 编号 */
+   recordSn Long,
+      /** 主订单号 */
+   orderSn Long,
+   /** 子订单号 */
+   orderProductSn Long,
+   /** 收件人 */
+   receiver String,
+   /** 收件人手机号 */
+   phone String,
+    /** 收件人邮箱 */
+   email String ,
+   /** 省编号 */
+   provinceCode String,
+   /** 省名称 */
+   provinceName String,
+   /** 城市编号 */
+   cityCode String,
+      /** 城市名称 */
+   cityName String,
+    /** 区编号 */
+   countyCode String,
+    /** 区名称 */
+   countyName String,
+    /** 街道 */
+   street String,
+   /** 地址全称 */
+  address String,
+   /** 是否赠送 1赠送;0未赠送 */
+   isDeal Integer,
+   /** 是否发货 1已发货;0未发货 */
+  isSend Integer',
+   /** 状态 1有效;0失效 */
+  state Integer,
+   /** 发货时间 */
+   sendTime Instant,
+   /** 创建时间 */
+  createTime Instant,
+   /** 修改时间 */
+  updateTime Instant
+}
+
